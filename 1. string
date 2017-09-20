@@ -1,0 +1,12 @@
+1. character array concatenation:
+cout << "This is " "single line!" << endl;
+Console print:  This is single line!
+
+2.sring + string problem:
+when we use :	
+	string a;
+	a = "as "+"asds"; // is wrong
+we can use:
+	string a, b;
+	a = "as ";
+	b = a + "asds"; //this is ok!
