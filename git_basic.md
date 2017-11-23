@@ -206,7 +206,7 @@ $ git push origin master
  git commit -m "Initial commit."
 ```
 
- linux服务器git pull/push时提示输入账号密码之免除设置
+ ***linux服务器git pull/push时提示输入账号密码之免除设置***
 
 1、先cd到根目录，执行git config --global credential.helper store命令
 
@@ -214,11 +214,13 @@ $ git push origin master
 
 2、执行之后会在.gitconfig文件中多加红色字体项
 
-[user]
+    [user]    
         name = 天明
         email = xxxx@xxxx.com
-[credential]
-        helper = store
+    [credential]
+    	helper = store
+​    
+
 
 3、之后cd到项目目录，执行git pull命令，会提示输入账号密码。输完这一次以后就不再需要，并且会在根目录生成一个.git-credentials文件
 
